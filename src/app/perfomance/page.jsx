@@ -1,14 +1,13 @@
-import Image from "next/image"
+import Hero from '@/components/hero'
 import perfomanceImg from '../../../public/performance.jpg'
 
 function page() {
   return (
-    <div className=" absolute -z-10 inset-0 ">Perfomance page
-      <Image src={perfomanceImg} 
-      alt="perfomance image" 
-      fill 
-      style={{objectFit:'cover'}}/>
-    </div>
+    <Hero
+    imgData={perfomanceImg}
+    imgAlt="Welding"
+    title="We server high perfomance Applications"
+  />
   )
 }
 
